@@ -21,11 +21,11 @@ public class vehiculo {
 
         if (tipovehiculo.equalsIgnoreCase("moto")) {
             
-            return "la " + tipovehiculo + " posee un motor " + motor + ", una transmisionde tipo " + transmision +
+            return "la " + tipovehiculo + " posee un motor " + motor + ", una transmision de tipo " + transmision +
             " y ademas es de color " + color;
         }else{
             
-            return "El " + tipovehiculo + " posee un motor " + motor + ", una transmisionde tipo " + transmision +
+            return "El " + tipovehiculo + " posee un motor " + motor + ", una transmision de tipo " + transmision +
             " y ademas es de color " + color;
         }
 

@@ -7,17 +7,26 @@ public class uso {
 
         Scanner sc = new Scanner(System.in);
 
-        String colorvehiculo, transmisionvehiculo;
+        vehiculo vehiculo = new vehiculo("Carro", "v8", "Manual", "Rojo" , 4 , 5);        
 
-        colorvehiculo = "Rojo";
-        transmisionvehiculo = "Automatica";
+        vehiculo vehiculosventa [] = new vehiculo[4];
 
-        moto tumoto = new moto(transmisionvehiculo,colorvehiculo);
+        vehiculosventa[0] = new camion("White");
 
-        System.out.println(tumoto.datosgenerales()+ ", el " + tumoto.costomoto());
+        vehiculosventa[1] = new carro("Azul");
         
-        
-        
-    }
+        vehiculosventa[2] = new moto("Manual", "Navy");
+
+        vehiculosventa[3] = new moto("Automatica", "Red");
+
+        //System.out.println( vehiculosventa[1].dimetiposasientos());
+
+        for (vehiculo vehiculo2 : vehiculosventa) {
+
+           System.out.println(vehiculo2.datosgenerales() + "\n");
+            
+        }
+              
+    } 
     
 }

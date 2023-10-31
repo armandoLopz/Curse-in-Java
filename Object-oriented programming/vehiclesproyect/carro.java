@@ -22,6 +22,8 @@ public class carro extends vehiculo {
     public String dimepreciocarro(){
 
         return "el precio del camion es de " + preciocarro;
+
+    }
     
     
 }
