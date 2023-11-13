@@ -7,9 +7,8 @@ public class uso {
 
         Scanner sc = new Scanner(System.in);
 
-        vehiculo vehiculo = new vehiculo("Carro", "v8", "Manual", "Rojo" , 4 , 5);        
-
-        vehiculo vehiculosventa [] = new vehiculo[4];
+        vehiculo vehiculosventa [] = new vehiculo[4];       
+                 
 
         vehiculosventa[0] = new camion("White");
 
@@ -19,14 +18,27 @@ public class uso {
 
         vehiculosventa[3] = new moto("Automatica", "Red");
 
-        //System.out.println( vehiculosventa[1].dimetiposasientos());
-
         for (vehiculo vehiculo2 : vehiculosventa) {
 
            System.out.println(vehiculo2.datosgenerales() + "\n");
             
         }
-              
+
+        vehiculosventa[1].tiposasiento(true);
+
+        System.out.println(vehiculosventa[1].dimetiposasientos());
+
+        carro carro1 = (carro) vehiculosventa[1];
+
+        camion camion1 = (camion) vehiculosventa[0];
+
+        System.out.println( carro1.dimepreciocarro() + ", " + carro1.dimetiposasientos());
+
+        camion1.tiposasiento(true);
+
+        System.out.println(camion1.dimepreciocamion() + ", " + camion1.dimetiposasientos());
+
+        System.out.println(camion1.datosgenerales());
     } 
     
 }
