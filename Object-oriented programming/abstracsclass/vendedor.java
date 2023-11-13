@@ -4,14 +4,13 @@ public class vendedor extends empleado {
 
     private String nombre,apellido, cargo;
 
-    private int salario, edad, bonificaciongeneral ;
+     int salario, edad, bonificacionvendedor;
 
     private double bonificacionventa;
 
     public vendedor(String nombre, String apellido ,String cargo, int edad , int sueldo){
 
         super(nombre, apellido,cargo, edad, sueldo);
-
 
         this.nombre = nombre;
         this.apellido = apellido;
@@ -28,21 +27,24 @@ public class vendedor extends empleado {
         if (salario != 200) {
 
             System.out.println("Su salario es invalido");
+            salario = 200;
+
+            System.out.println("El salario asignado para su cargo es de " + salario);
             
         }
 
         if (this.cargo.equalsIgnoreCase("vendedor") == false) {
             
             System.out.println("El cargo es invalido, ingrese su cargo correctamente");
+            this.cargo = "Vendedor";
         }
      
-        bonificaciongeneral = 2000;
+        bonificacionvendedor = 2000;
         bonificacionventa = 0.05;
-        salario = 200;
 
     }
 
-    //USO METODOS ABSTRACTOS
+    //USO METODOS ABSTRACTOS DE LA CLASE EMPLEADO
 
     public String datosempresa(){
 
@@ -51,7 +53,7 @@ public class vendedor extends empleado {
     
     public int bonificacion(){
 
-        return bonificaciongeneral;
+        return bonificacionvendedor;
     }
 
     public double bonificacionventas(int precioproducto){
@@ -59,6 +61,13 @@ public class vendedor extends empleado {
         double bonificacionabonar = bonificacionventa * precioproducto;
 
         return bonificacionabonar;
+    }
+
+    public int pagomensual(int montoventasproductos){
+
+        double comisionporventas = bonificacionventa* montoventasproductos;
+
+        return this.salario + this.bonificacionvendedor + (int)Math.round(comisionporventas);
     }
 
     //Getters
@@ -75,6 +84,6 @@ public class vendedor extends empleado {
 
     public String dimecargo(){
 
-        return this.cargo;
+        return cargo;
     }
 } 

@@ -16,7 +16,11 @@ public abstract class empleado extends person{
         
     }
 
+    //Metodos abstractos 
+
     public abstract int bonificacion();
+
+    public abstract int pagomensual(int montototalproductos);
 
     public abstract double bonificacionventas(int precioproducto);
 
