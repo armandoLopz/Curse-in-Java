@@ -1,6 +1,6 @@
 package abstracsclass;
 
-public class gerente extends supervisor{
+public class gerente extends empleado{
     
     private String nombre, apellido, cargo;
     private int salario,edad, bonificaciongerente;
@@ -28,6 +28,7 @@ public class gerente extends supervisor{
         if (salario != 450) {
 
             System.out.println("Su salario es invalido");
+            System.out.println("Se ejecuta if del gerente " + salario);
             this.salario = 450;
             
         }
@@ -45,6 +46,18 @@ public class gerente extends supervisor{
         double comisionporventas = comisionporventatienda*montoventasproductos;
 
         return this.salario + this.bonificaciongerente + (int)Math.round(comisionporventas);
+    }
+
+    public double bonificacionventas(int precioproducto){
+
+        int montocomisiones = (int)Math.round(precioproducto*comisionporventatienda);
+
+        return montocomisiones + salario + comisionporventatienda;
+    }
+
+    public int bonificacion(){
+
+        return bonificaciongerente;
     }
 
     //Metodo abstracto de la clase persona 

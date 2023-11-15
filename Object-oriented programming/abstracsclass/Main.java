@@ -37,7 +37,14 @@ public class Main {
 
         System.out.println("Pago nomina: Vendedor1: " + vendedor1.pagomensual(2000) + ", vendedor 2: " + vendedor2.pagomensual(2240));
 
+        System.out.println("La bonificacion del vendedor es igual a " + vendedor1.bonificacion() + ", la bonificacion del gerente es igual a " + gerente1.bonificacion());
         
+
+        System.out.println(gerente1.datosempresa());
+
+        System.out.println(vendedor1.datosempresa());
+
+        System.out.println(supervisor1.datosempresa());
     }
     
 }

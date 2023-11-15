@@ -45,11 +45,6 @@ public class vendedor extends empleado {
     }
 
     //USO METODOS ABSTRACTOS DE LA CLASE EMPLEADO
-
-    public String datosempresa(){
-
-        return "Mi cargo es " + cargo + " y mi sueldo es de " + salario;
-    }
     
     public int bonificacion(){
 

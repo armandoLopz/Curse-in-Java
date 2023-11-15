@@ -1,6 +1,6 @@
 package abstracsclass;
 
-public class supervisor extends vendedor {
+public class supervisor extends empleado {
 
     private String nombre, apellido, cargo;
     private int salario,edad, bonificacionsupervisor;
@@ -36,6 +36,18 @@ public class supervisor extends vendedor {
             System.out.println("El cargo es invalido, ingrese su cargo correctamente");
         }
     }
+
+
+    //Creacion de metodos abstractos
+
+    public double bonificacionventas(int precioproducto){
+
+        int montocomisiones = (int)Math.round(precioproducto*comisionsupervision);
+
+        return montocomisiones + salario + bonificacionsupervisor;
+    }
+ 
+    //GETTERS
 
     public int bonificacion(){
 

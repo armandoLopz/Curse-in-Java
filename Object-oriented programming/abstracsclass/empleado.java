@@ -4,6 +4,7 @@ public abstract class empleado extends person{
 
     private String nombre, apellido, cargo;
     private int sueldo, edad;
+
     public empleado(String nombre, String apellido , String cargo, int edad, int sueldo ){
         
         super(nombre, apellido, edad);
@@ -24,6 +25,8 @@ public abstract class empleado extends person{
 
     public abstract double bonificacionventas(int precioproducto);
 
-    public abstract String datosempresa();
-    
+    public String datosempresa(){
+
+        return "Mi cargo es " + cargo + " y mi sueldo es de " + sueldo;
+    }
 }
