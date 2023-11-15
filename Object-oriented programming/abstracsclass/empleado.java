@@ -19,6 +19,8 @@ public abstract class empleado extends person{
 
     //Metodos abstractos 
 
+    // Agregar diferentes cosas en los metodos para que se pueda visualizar la abstraccion
+
     public abstract int bonificacion();
 
     public abstract int pagomensual(int montototalproductos);

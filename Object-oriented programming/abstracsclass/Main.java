@@ -1,11 +1,20 @@
 package abstracsclass;
 
+import java.util.Scanner;
+
 import abstracsclass.notisapersonal.cliente;
 import abstracsclass.notisapersonal.provedor;
 
 public class Main {
+
+    enum tallaproductos{ XS,S , M, L, XL };
     
     public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        
+
+        tallaproductos [] ListTalls = tallaproductos.values();
 
         // Instancia de los objetos empleados
 
@@ -45,6 +54,54 @@ public class Main {
         System.out.println(vendedor1.datosempresa());
 
         System.out.println(supervisor1.datosempresa());
+
+
+        System.out.println("Nuestras tallas disponibles son : ");
+
+        int NumberTall = 1;
+
+        for (int i = 0; i < ListTalls.length; i++) {
+            
+            System.out.println("Numero " + NumberTall + ": talla " +  ListTalls[i]);
+
+            NumberTall++;
+        }
+
+        System.out.println("Seleccione su numero de talla");
+
+        int SelectTall = sc.nextInt();
+
+        switch (SelectTall) {
+
+            case 1:
+
+                System.out.println("Seleccionaste la talla " + ListTalls[0]);
+                
+                break;
+        
+            case 2:
+
+                System.out.println("Seleccionaste la talla " + ListTalls[1]);
+                break;
+
+            case 3:
+
+                System.out.println("Seleccionaste la talla " + ListTalls[2]);
+                break;
+
+            case 4:
+
+                System.out.println("Seleccionaste la talla " + ListTalls[3]);
+                break;
+
+            case 5:
+
+                System.out.println("Seleccionaste la talla " + ListTalls[4]);
+                break;
+
+            default: System.out.println("Ingrese una talla correcta");
+                break;
+        }
     }
     
 }
