@@ -49,5 +49,10 @@ public class supervisor extends vendedor {
         return this.salario + this.bonificacionsupervisor + (int)Math.round(comisionporventas);
     }
 
+    public String datospersona(){
+
+        return "Mi nombre es " + nombre + " " + apellido + ", tengo " + edad + " de edad";
+    }
+
     
 }

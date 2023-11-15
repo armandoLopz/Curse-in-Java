@@ -70,6 +70,11 @@ public class vendedor extends empleado {
         return this.salario + this.bonificacionvendedor + (int)Math.round(comisionporventas);
     }
 
+    public String datospersona(){
+
+        return "Mi nombre es " + nombre + " " + apellido + ", tengo " + edad + " de edad";
+    }
+
     //Getters
 
     public String retornosueldo(){

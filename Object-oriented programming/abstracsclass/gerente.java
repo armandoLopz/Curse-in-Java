@@ -38,5 +38,37 @@ public class gerente extends supervisor{
         }
     }
 
+    // Metodo abstracto de la clase empleado 
+
+    public int pagomensual(int montoventasproductos){
+
+        double comisionporventas = comisionporventatienda*montoventasproductos;
+
+        return this.salario + this.bonificaciongerente + (int)Math.round(comisionporventas);
+    }
+
+    //Metodo abstracto de la clase persona 
     
+    public String datospersona(){
+
+        return "Mi nombre es " + nombre + " " + apellido + ", tengo " + edad + " de edad";
+    }
+
+    // Getters 
+
+    public int bonificaciongerente(){
+
+        return bonificaciongerente;
+    }
+
+    public int salariogerente(){
+
+        return salario;
+    }
+
+    public double comisionventasgerente(){
+
+        return comisionporventatienda;
+    }
+
 }
