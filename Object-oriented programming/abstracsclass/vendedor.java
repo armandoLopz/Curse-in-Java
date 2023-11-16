@@ -1,6 +1,8 @@
 package abstracsclass;
 
-public class vendedor extends empleado {
+import abstracsclass.method_interfaces.vendedor_interfaz;
+
+public class vendedor extends empleado implements vendedor_interfaz {
 
     private String nombre,apellido, cargo;
 
@@ -44,6 +46,15 @@ public class vendedor extends empleado {
 
     }
 
+    // USO METODO DE LA INTERFAZ EMPLEADO
+
+    public String atendercliente(){
+
+        return "Un vendedor esta atendiendo a un cliente";
+
+    }
+
+
     //USO METODOS ABSTRACTOS DE LA CLASE EMPLEADO
     
     public int bonificacion(){
@@ -72,18 +83,4 @@ public class vendedor extends empleado {
 
     //Getters
 
-    public String retornosueldo(){
-
-        return "El sueldo mensual es de " + salario;
-    }
-
-    public String dimenombre(){
-
-        return nombre;
-    }
-
-    public String dimecargo(){
-
-        return cargo;
-    }
 } 

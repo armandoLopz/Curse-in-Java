@@ -1,6 +1,6 @@
 package abstracsclass;
 
-public abstract class person {
+public class person {
 
     private String nombre,apellido;
 
@@ -14,5 +14,20 @@ public abstract class person {
 
     }
 
-    public abstract String datospersona();
+    // GETTERS
+
+    public String nombrepersona(){
+
+        return nombre + " " + apellido;
+    }
+
+    public int edadpersona(){
+
+        return edad;
+    }
+
+    public String datospersona(){
+
+        return "Mi nombre es " + nombre + " " + apellido + " y tengo " + edad + " años de " + edad;
+    }
 }

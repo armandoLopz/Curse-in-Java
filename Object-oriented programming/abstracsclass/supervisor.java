@@ -1,6 +1,6 @@
 package abstracsclass;
 
-public class supervisor extends empleado {
+public class supervisor extends empleado  {
 
     private String nombre, apellido, cargo;
     private int salario,edad, bonificacionsupervisor;
@@ -35,6 +35,13 @@ public class supervisor extends empleado {
             
             System.out.println("El cargo es invalido, ingrese su cargo correctamente");
         }
+    }
+
+    // USO DEL METODO DE LA INTERFAZ
+
+    public String supervisorempleado(){
+
+        return "Un supervisor esta supevisor a los empleados";
     }
 
 
