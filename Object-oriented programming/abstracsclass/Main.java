@@ -151,6 +151,11 @@ public class Main {
             gerente_interfaz aplicaciondelmetodo = (gerente_interfaz)gerente1;
 
             System.out.println(aplicaciondelmetodo.despedir(vendedor1.nombrepersona(), vendedor1.dimecargo()));
+
+            gerente gerente2 = new gerente("Armando", "Lopez", "Gerente", 35,450);
+
+            System.out.println(gerente2.despedir(vendedor2.nombrepersona(), vendedor2.dimecargo()));
+            
             
     }
     
