@@ -9,8 +9,9 @@ public class action implements ActionListener{
     public void actionPerformed(ActionEvent accion){
 
         Date horaactual = new Date();
-        
-        System.out.println("Se imprimira la hora cada 10 segundos: " + horaactual);
+
+        System.out.println("Se imprimira la hora cada 2 segundos: " + horaactual);
+
         
     }
 }

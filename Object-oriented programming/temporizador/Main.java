@@ -13,15 +13,19 @@ public class Main {
         Timer temporizador = new Timer(2000, horaactual );
 
         temporizador.start();
-
+        
         System.out.println("Pulse true para salir");
 
-        boolean salida = sc.nextBoolean();
+        boolean salida = false;
+
+        salida = sc.nextBoolean();
 
         if (salida) {
 
             System.exit(0);
 
+        }else{
+            
         }
         
     }
