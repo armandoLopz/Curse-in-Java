@@ -1,4 +1,5 @@
 package temporizador;
+import java.awt.event.ActionEvent;
 import java.util.Scanner;
 import javax.swing.Timer;
 
@@ -24,8 +25,6 @@ public class Main {
 
             System.exit(0);
 
-        }else{
-            
         }
         
     }

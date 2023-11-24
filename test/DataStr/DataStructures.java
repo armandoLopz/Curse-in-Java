@@ -53,13 +53,11 @@ public class DataStructures {
         System.out.println("El numero " + aux + " en decimal es igual a: ");
         
         // Impresion de los valores del array ordenados
-        
         for (int i = 0; i < ordenedNumbers.length; i++) {
             
             System.out.print(ordenedNumbers[i]);
         }
 
-    
     }
     
 }
