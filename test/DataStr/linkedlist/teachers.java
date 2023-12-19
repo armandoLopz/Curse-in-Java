@@ -15,4 +15,9 @@ public class teachers extends person{
         this.nameCollege = nameCollege;
         this.asignature = asignature;
     }
+
+    //GETTERS
+
+    
+
 }

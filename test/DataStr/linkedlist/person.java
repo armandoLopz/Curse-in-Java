@@ -2,21 +2,35 @@ package test.DataStr.linkedlist;
 
 public class person {
 
-    private String name,lastname;
+    private String name,lastName;
     private int age, heigth;
+    private final String cm;
 
-    public person(String nombre, String apellido, int edad){
+    public person(String nombre, String lastName, int edad){
+
+        // Inicialization var in the construct
 
         this.name = nombre;
-        this.lastname = apellido;
+        this.lastName = lastName;
         this.age = edad;
 
+        //Declation const atributte
+
+        cm = "cm";
+
     }
 
-    public void insertheigth(int heigth){
+    //Abstract methods
 
-        this.heigth = heigth;
-    }
+    public String getPersonalInformation(){
+
+        return "Mi nombre es " + name + " " + lastName + ", tengo " + age + " años de edad";
     
+    }
+
+    public String getPhysicInformation(){
+
+        return "Mido " + heigth + " " + cm ;
+    }
     
 }

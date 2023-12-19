@@ -1,13 +1,13 @@
 package test.DataStr.linkedlist;
 
-public class students extends person{
+import exercise_polygon.Objects.father.sons.rectangule;
 
-    enum levelStudy{highSchool, secondary , university};
+public class students extends person{
 
     private String name,lastName,nameSchool, levelStudy;
     private int age,yearStudy; 
     
-    public students(String name, String lastName, int age, String nameSchool, int levelStudy){
+    public students(String name, String lastName, int age, String nameSchool, String levelStudy){
 
         super(name, lastName, age);
 
@@ -21,5 +21,12 @@ public class students extends person{
         this.levelStudy = levelStudy;
         this.nameSchool = nameSchool;
         
+    }
+
+    //GETTERS
+
+    public String informationStudent(){
+
+        return "Veo clases en " + nameSchool + " estoy cursando " + levelStudy + " y llevo estudiando " + yearStudy;
     }
 }

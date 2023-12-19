@@ -50,7 +50,7 @@ public class DataStructures {
             a++;
         }
 
-        System.out.println("El numero " + aux + " en decimal es igual a: ");
+        System.out.println("El numero " + aux + " en binario es igual a: ");
         
         // Impresion de los valores del array ordenados
         for (int i = 0; i < ordenedNumbers.length; i++) {

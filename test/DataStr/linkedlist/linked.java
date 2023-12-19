@@ -8,6 +8,7 @@ public class linked {
 
     public static void main(String[] args) {
 
+        enum levelStudy{highSchool, secondary , university};
         Scanner sc = new Scanner(System.in);
          
  
@@ -40,9 +41,10 @@ public class linked {
                 String nameSchool = sc.nextLine();
 
                 System.out.println("Ingrese el grado que cursa");
+                System.out.println("- " + levelStudy.secondary + "\n- " + levelStudy.highSchool + "\n- " + levelStudy.university);
 
-                int levelStudy = sc.nextInt();
-
+                String levelStudy = sc.nextLine();
+                
                 linked.add(new students(nameStudent, lastnameStudent, ageStudent, nameSchool, levelStudy));
                 
             }else if (createPersons == 2) {
@@ -75,6 +77,14 @@ public class linked {
             }
             
         } while (createPersons == 1  || createPersons == 2);
+
+        System.out.println("La lista de usuario a sido creada");
+       
+
+        for (int i = 0; i < linked.size(); i++) {
+            
+            System.out.println(i+1 + "- ");
+        }
         
     }
     
