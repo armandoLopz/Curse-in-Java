@@ -30,6 +30,21 @@ public class product {
 
     // GETTERS 
 
+    public String getIdProduct(){
+
+        return id;
+    }
+
+    public String getNameProduct(){
+
+        return name;
+    }
+
+    public String getDescription(){
+
+        return description;
+    }
+
     public int getAmountProduct(){
 
         return amount;
@@ -39,5 +54,31 @@ public class product {
 
         return price;
     }
+
+    //SETTERS 
+
+    public void setIdProduct(String id){
     
+        this.id = id;
+    }
+
+    public void setNameProduct(String name){
+    
+        this.name = name;
+    }
+    
+    public void setDescriptipn(String description){
+    
+        this.description = description;
+    }
+
+    public void setAmount(int amount){
+    
+        this.amount = amount;
+    }
+    
+    public void setPrice(int price){
+    
+        this.price = price;
+    }
 }

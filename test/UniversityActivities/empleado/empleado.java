@@ -1,7 +1,5 @@
 package test.UniversityActivities.empleado;
 
-import exercise_polygon.Objects.father.sons.rectangule;
-
 public class empleado {
     
     private String name,lastName;
