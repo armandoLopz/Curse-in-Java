@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test.UniversityActivities.Ecommerce.test",
+            "projectName": "Curse-in-Java_63c03a45"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "test.UniversityActivities.Ecommerce.Main",

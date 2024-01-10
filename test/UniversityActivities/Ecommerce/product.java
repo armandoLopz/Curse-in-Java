@@ -2,11 +2,11 @@ package test.UniversityActivities.Ecommerce;
 
 public class product {
 
-    private String id, name, description;
-    private int amount;
+    private String name, description;
+    private int id,amount;
     private double price;
 
-    public product(String id, String name, String description, int amount, double price){
+    public product(int id, String name, String description, int amount, double price){
 
         this.id = id;
         this.name = name;
@@ -25,12 +25,17 @@ public class product {
 
     public double totalPriceProduct(){
     
-        return price*amount;
+        return (double)price*amount;
+    }
+
+    public String detailsSellProduct(){
+
+        return "ID: " + id + "\nNombre: " + name + "\nDescripcion: " + description + "\nPrecio: " + price;
     }
 
     // GETTERS 
 
-    public String getIdProduct(){
+    public int getIdProduct(){
 
         return id;
     }
@@ -57,7 +62,7 @@ public class product {
 
     //SETTERS 
 
-    public void setIdProduct(String id){
+    public void setIdProduct(int id){
     
         this.id = id;
     }
