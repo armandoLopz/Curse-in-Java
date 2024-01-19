@@ -7,10 +7,9 @@ public class shoppingCart {
     private LinkedList<product> listProducts = new LinkedList<product>();
     private user user;
     
-
-    public shoppingCart(LinkedList <product> lista, user user){
+    public shoppingCart(LinkedList <product> listProducts, user user){
         
-        for (product product : lista) {
+        for (product product : listProducts) {
 
             if (product.getAmountProduct() > 0 && product.getPriceProduct() > 0) {
 
@@ -18,9 +17,16 @@ public class shoppingCart {
             }
         }
 
-        listProducts = lista;
+        this.listProducts = listProducts;
         
         this.user = user;
+    }
+
+    //GETTERS
+
+    public LinkedList<product> getListUser(){
+
+        return listProducts;
     }
 
     //METHODS
@@ -44,7 +50,7 @@ public class shoppingCart {
         }
     }
 
-    public void setAmountProduct(int id,int amount){
+   public void setAmountProduct(int id,int amount){
 
         for (product product2 : listProducts) {
             
