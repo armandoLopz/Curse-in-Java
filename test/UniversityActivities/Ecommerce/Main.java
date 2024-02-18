@@ -95,9 +95,9 @@ public class Main {
                                     } else if (amountProduct <= product.getAmountProduct() && amountProduct > 0) {
 
                                         // SE AGREGAN LOS PRODUCTOS AL CARRITO
-
+                                        product newProduct = new product(product.getIdProduct(),product.getNameProduct(), product.getDescription(), amountProduct, product.getPriceProduct());
                                         // Se agrega el producto al carrito del usuario
-                                        scart1.addProducts(product);
+                                        scart1.addProducts(newProduct);
 
                                         //listProductsEcommerce.updateAmountProductsEcommerce(buyClient, amountProduct);
 
@@ -257,7 +257,7 @@ public class Main {
 
                             System.out.println("PRODUCTOS DENTRO DEL CARRITO:");
                             scart1.ShowListProducts();
-
+                            
                         }
                         break;
                     case 5:

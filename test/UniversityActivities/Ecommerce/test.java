@@ -3,8 +3,6 @@ package test.UniversityActivities.Ecommerce;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-import abstracsclass.person;
-
 public class test {
 
     public void setAmountProduct(LinkedList<product> listProducts,product product, int amount){
