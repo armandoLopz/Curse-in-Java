@@ -44,8 +44,11 @@ public class listEcommerce {
 
             for (product product : listEcommerce) {
 
-                System.out.println(product.detailsProduct());
-                System.out.println();
+                if (product.getAmountProduct() > 0) {
+                    
+                    System.out.println(product.detailsProduct());
+                    System.out.println();
+                }
             }
         }
     }
@@ -67,12 +70,9 @@ public class listEcommerce {
 
             if (product.getIdProduct() == id) {
                 // Actualiza la cantidad de stock que hay en el comercio
-                System.out.println(product.getNameProduct() + "CANTIDA DE PRODUCTOS QUE HAY " + product.getAmountProduct()
-                        + " CANTIDAD QUE SE VA A RESTAR " + newAmount);
+                
                 int amount = product.getAmountProduct() - newAmount;
                 product.setAmount(amount);
-
-                System.out.println("Resultado que se guarda en la lista " + product.getAmountProduct());
 
                 break;
 

@@ -90,7 +90,7 @@ public class shoppingCart {
 
         for (product product : listProducts) {
 
-            System.out.println(product.detailsProduct()); 
+            System.out.println(product.detailsProduct() + "\n"); 
             
         }
 
